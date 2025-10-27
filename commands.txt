@@ -1,0 +1,24 @@
+add: MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+add: GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet module_blacklist=nouveau nvidia-drm.modeset=1"
+
+
+paru -S nvidia-390xx-dkms nvidia-390xx-utils opencl-nvidia-390xx nvidia-390xx-settings lib32-nvidia-390xx-utils lib32-opencl-nvidia-390xx vdpauinfo clinfo
+
+pacman -S pipewire pipewire-audio gst-plugin-pipewire pipewire-alsa pipewire-jack pipewire-pulse pipewire-roc wireplumber realtime-privileges 
+paru -S gnu-free-fonts ttf-hack ttf-inconsolata noto-fonts-emoji ttf-dejavu ttf-liberation noto-fonts ttf-hack-nerd ttf-jetbrains-mono ttf-jetbrains-mono-nerd noto-fonts-cjk
+
+pacman -S xorg-server xorg-xinit xorg-xrandr
+
+pacman -S firefox firefox-ublock-origin
+
+
+
+
+
+
+
+
+
+
+
+
